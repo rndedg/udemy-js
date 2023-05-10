@@ -47,7 +47,7 @@
 // const now = 2023;
 // const ageGord = now - 1985;
 // const ageDave = now - 2018;
-// console.log(ageGord, ageDave);
+// // console.log(ageGord, ageDave);
 
 // 2 ** 3 means 2 to the power of 3
 // console.log(ageGord * 2, ageGord / 2, 2 ** 3);
@@ -71,6 +71,21 @@
 // console.log(now - 1991 > now - 2018);
 
 // Part 5 - Operator Precedence
+// operator precedence table from MDN
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence#table
+
+const now = 2023;
+const ageGord = now - 1985;
+const ageDave = now - 2018;
+// console.log(ageGord, ageDave);
+
+console.log(now - 1991 > now - 2018);
+
+let x, y;
+x = y = 25 - 10 - 5; // x, y = 10
+console.log(x, y);
+const averageAge = (ageGord + ageDave) / 2;
+console.log(ageGord, ageDave, averageAge);
 
 // Assignments
 
