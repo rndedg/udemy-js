@@ -42,6 +42,36 @@
 
 // const birthYear = 1985;
 
+// Part 4 - Basic Operators
+
+// const now = 2023;
+// const ageGord = now - 1985;
+// const ageDave = now - 2018;
+// console.log(ageGord, ageDave);
+
+// 2 ** 3 means 2 to the power of 3
+// console.log(ageGord * 2, ageGord / 2, 2 ** 3);
+
+// const firstName = "Gord";
+// const lastName = "Letkeman";
+// console.log(firstName + " " + lastName);
+
+// Assignment operators
+// let x = 10 + 5; // 15
+// x += 10; // 25
+// x *= 4; // 100
+// x++; // x = x + 1
+// x--; // x = x - 1
+// console.log(x);
+
+// Comparison operators
+// console.log(ageGord > ageDave); // >, <, >=, <=
+// console.log(ageDave >= 18);
+
+// console.log(now - 1991 > now - 2018);
+
+// Part 5 - Operator Precedence
+
 // Assignments
 
 // Part 1. VALUES AND VARIABLES
@@ -84,3 +114,36 @@
 
 // language = "English";
 // console.log(language);
+
+// Part 4. BASIC OPERATORS
+
+// 1. If your country split in half, and each half would contain half the population,
+// then how many people would live in each half?
+// 2. Increase the population of your country by 1 and log the result to the console
+// 3. Finland has a population of 6 million. Does your country have more people than
+// Finland?
+// 4. The average population of a country is 33 million people. Does your country
+// have less people than the average country?
+// 5. Based on the variables you created, create a new variable 'description'
+// which contains a string with this format: 'Portugal is in Europe, and its 11 million
+// people speak portuguese'
+
+// console.log("Half of the population of Canada in millions: " + population / 2);
+// console.log(population++);
+
+// const finlandPopulation = 6;
+// console.log(
+//   "Does Canada have more people that Finland? " +
+//     (population > finlandPopulation)
+// );
+
+// const averagePopulation = 33;
+
+// console.log(
+//   "Does Canada have less people than the average country? " +
+//     (population < averagePopulation)
+// );
+
+// console.log(
+//   `${country} is in ${continent} and its ${population} million people mostly speak ${language}.`
+// );
