@@ -74,19 +74,46 @@
 // operator precedence table from MDN
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence#table
 
-const now = 2023;
-const ageGord = now - 1985;
-const ageDave = now - 2018;
+// const now = 2023;
+// const ageGord = now - 1985;
+// const ageDave = now - 2018;
 // console.log(ageGord, ageDave);
 
-console.log(now - 1991 > now - 2018);
+// console.log(now - 1991 > now - 2018);
 
-let x, y;
-x = y = 25 - 10 - 5; // x, y = 10
-console.log(x, y);
-const averageAge = (ageGord + ageDave) / 2;
-console.log(ageGord, ageDave, averageAge);
+// let x, y;
+// x = y = 25 - 10 - 5; // x, y = 10
+// console.log(x, y);
+// const averageAge = (ageGord + ageDave) / 2;
+// console.log(ageGord, ageDave, averageAge);
 
+const firstName = "Gord";
+const job = "developer";
+const birthYear = 1985;
+const year = 2023;
+
+// Sloppy looking code
+// const gord =
+//   "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
+
+// Template literals are cleaner and more reusable
+const gord = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(gord);
+
+console.log(
+  "String with \n\
+multiple \n\
+lines"
+);
+
+console.log(`String with
+multiple lines
+using template literals`);
+//
+//
+//
+//
+//
 // Assignments
 
 // Part 1. VALUES AND VARIABLES
