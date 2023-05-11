@@ -134,3 +134,26 @@
 // }
 
 // console.log(century);
+
+// Part 8 - Type conversion and coercion
+// conversion - when we manually convert a data type
+// coercion - when JS automatically converts types behind the scenes
+
+// type conversion
+
+// const inputYear = "1991"; // mock data as if it was from an input field on a website (input returns are always a string)
+// console.log(Number(inputYear) + 18);
+
+// console.log(Number("Gord")); // NaN - an invalid number
+
+// console.log(String(23));
+
+// type coercion
+
+// console.log("I am " + 23 + " years old"); // JS automatically converts numbers to string
+// console.log("23" - "10" - 3); // -, *, / operators convert strings to numbers
+// console.log("23" * "2");
+
+// let n = "1" + 1; // "11"
+// n = n - 1; // "11" - 1
+// console.log(n); // 10
