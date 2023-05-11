@@ -190,22 +190,29 @@
 // Part 10 - Equality Operators: == VS. ===
 // === strict comparison
 // == loose compaison, has type coercion
-const age = "18";
-if (age === 18) console.log("You just became an adult (strict)"); // if no else statement you don't need the {} block
-if (age == 18) console.log("You just became an adult (loose)");
+// const age = "18";
+// if (age === 18) console.log("You just became an adult (strict)"); // if no else statement you don't need the {} block
+// if (age == 18) console.log("You just became an adult (loose)");
 // try to avoid loose compaisons and stick to converting before comparison
 
-const favourite = Number(prompt("What's your favourite number?"));
-console.log(favourite);
+// const favourite = Number(prompt("What's your favourite number?"));
+// console.log(favourite);
 
-if (favourite === 23) {
-  console.log("Cool! 23 is an amazing number!");
-} else if (favourite === 7) {
-  console.log("7 is also a cool number");
-} else if (favourite === 10) {
-  console.log("10 is also a cool number");
-} else {
-  console.log("Number is not 23, 7, or 10");
-}
+// if (favourite === 23) {
+//   console.log("Cool! 23 is an amazing number!");
+// } else if (favourite === 7) {
+//   console.log("7 is also a cool number");
+// } else if (favourite === 10) {
+//   console.log("10 is also a cool number");
+// } else {
+//   console.log("Number is not 23, 7, or 10");
+// }
 
-if (favourite !== 10) console.log("Why not 10?");
+// if (favourite !== 10) console.log("Why not 10?");
+
+// Part 11 - Boolean Logic
+// && - both must be true
+// || - as long as one is true
+// '!' - inverts true/false value
+
+//Part 12 - Logical Operators
