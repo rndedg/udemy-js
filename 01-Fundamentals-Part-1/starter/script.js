@@ -157,3 +157,32 @@
 // let n = "1" + 1; // "11"
 // n = n - 1; // "11" - 1
 // console.log(n); // 10
+
+// Part 9 - Truthy and Falsy Values
+
+// The five falsy values in JS:
+// 1. 0
+// 2. ''
+// 3. undefined
+// 4. null
+// 5. NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Gord"));
+console.log(Boolean({}));
+console.log(Boolean(24));
+
+const money = 0;
+if (money) {
+  console.log("Don't spend it all ;)");
+} else {
+  console.log("You should get a job!");
+}
+
+let height;
+if (height) {
+  console.log("YAY! Height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+}
