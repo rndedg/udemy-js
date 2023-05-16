@@ -217,8 +217,8 @@
 
 //Part 12 - Logical Operators
 
-const hasDriversLicense = true; //A
-const hasGoodVision = true; //B
+// const hasDriversLicense = true; //A
+// const hasGoodVision = true; //B
 
 // console.log(hasDriversLicense && hasGoodVision);
 // console.log(hasDriversLicense || hasGoodVision);
@@ -230,10 +230,51 @@ const hasGoodVision = true; //B
 //   console.log("Someone else should drive.");
 // }
 
-const isTired = false; // C
+// const isTired = false; // C
 
-if (hasDriversLicense && hasGoodVision && !isTired) {
-  console.log("Sarah is able to drive!");
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//   console.log("Sarah is able to drive!");
+// } else {
+//   console.log("Someone else should drive.");
+// }
+
+const day = "thursday";
+
+switch (day) {
+  case "monday": // day === 'monday'
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend!");
+    break;
+  default:
+    console.log("Not a valid day.");
+}
+
+// Same thing using if else statements
+if (day === "monday") {
+  console.log("Plan course structure");
+  console.log("Go to coding meetup");
+} else if (day === "tuesday") {
+  console.log("Prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Write code examples");
+} else if (day === "friday") {
+  console.log("Record videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Enjoy the weekend!");
 } else {
-  console.log("Someone else should drive.");
+  console.log("Not a valid day.");
 }
