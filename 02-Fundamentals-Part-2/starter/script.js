@@ -44,18 +44,34 @@
 // Function Declaration
 // can call declared function before it is defined (hoisting)
 
-const age1 = calcAge1(1985);
+// const age1 = calcAge1(1985);
 
-function calcAge1(birthYear) {
-  return 2037 - birthYear;
-}
+// function calcAge1(birthYear) {
+//   return 2037 - birthYear;
+// }
 
 // Function Expression
 // tends to keep code cleaner and more structured by having functions declared at the top
 // declaration vs expression comes down to personal preference
-const calcAge2 = function (birthYear) {
-  return 2037 - birthYear;
+// const calcAge2 = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+
+// const age2 = calcAge2(1985);
+
+// Arrow Functions
+// a special form of function expression that is shorter and therefore faster to write
+
+// const calcAge3 = (birthyear) => 2037 - birthyear;
+
+// const age3 = calcAge3(1985);
+// console.log(age1, age2, age3);
+
+const yearsUntilRetirement = (birthyear, firstName) => {
+  const age = 2037 - birthyear;
+  const retirement = 65 - age;
+  return `${firstName} retires in ${retirement} years.`;
 };
 
-const age2 = calcAge2(1985);
-console.log(age1, age2);
+console.log(yearsUntilRetirement(1985, "Gord"));
+console.log(yearsUntilRetirement(1980, "Dave"));
