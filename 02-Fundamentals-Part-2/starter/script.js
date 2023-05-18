@@ -28,13 +28,34 @@
 // logger();
 // logger();
 
-function fruitProcessor(apples, oranges) {
-  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-  return juice;
+// function fruitProcessor(apples, oranges) {
+//   const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+//   return juice;
+// }
+
+// const appleJuice = fruitProcessor(5, 0);
+// console.log(appleJuice);
+
+// const appleOrangeJuice = fruitProcessor(2, 4);
+// console.log(appleOrangeJuice);
+
+// Function Declarations Vs. Expressions
+
+// Function Declaration
+// can call declared function before it is defined (hoisting)
+
+const age1 = calcAge1(1985);
+
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
 }
 
-const appleJuice = fruitProcessor(5, 0);
-console.log(appleJuice);
+// Function Expression
+// tends to keep code cleaner and more structured by having functions declared at the top
+// declaration vs expression comes down to personal preference
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
 
-const appleOrangeJuice = fruitProcessor(2, 4);
-console.log(appleOrangeJuice);
+const age2 = calcAge2(1985);
+console.log(age1, age2);
