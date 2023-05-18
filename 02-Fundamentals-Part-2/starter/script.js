@@ -79,16 +79,39 @@
 // Functions Calling Other Functions
 // keeps code DRY and makes functions more reusable
 
-function cutFruitPieces(fruit) {
-  return fruit * 4;
-}
+// function cutFruitPieces(fruit) {
+//   return fruit * 4;
+// }
 
-function fruitProcessor(apples, oranges) {
-  const applePieces = cutFruitPieces(apples);
-  const orangePieces = cutFruitPieces(oranges);
+// function fruitProcessor(apples, oranges) {
+//   const applePieces = cutFruitPieces(apples);
+//   const orangePieces = cutFruitPieces(oranges);
 
-  const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
-  return juice;
-}
+//   const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+//   return juice;
+// }
 
-console.log(fruitProcessor(2, 3));
+// console.log(fruitProcessor(2, 3));
+
+// Reviewing Functions
+
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const yearsUntilRetirement = function (birthyear, firstName) {
+  const age = calcAge(birthyear);
+  const retirement = 65 - age;
+
+  if (retirement > 0) {
+    console.log(`${firstName} retires in ${retirement} years.`);
+    return retirement;
+  } else {
+    // returning -1 or a number like 9999 is used to show clearly that the result has no real meaning.
+    console.log(`${firstName} has already retired.`);
+    return -1;
+  }
+};
+
+console.log(yearsUntilRetirement(1985, "Gord"));
+console.log(yearsUntilRetirement(1950, "Dave"));
