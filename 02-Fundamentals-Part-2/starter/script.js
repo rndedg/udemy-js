@@ -67,11 +67,28 @@
 // const age3 = calcAge3(1985);
 // console.log(age1, age2, age3);
 
-const yearsUntilRetirement = (birthyear, firstName) => {
-  const age = 2037 - birthyear;
-  const retirement = 65 - age;
-  return `${firstName} retires in ${retirement} years.`;
-};
+// const yearsUntilRetirement = (birthyear, firstName) => {
+//   const age = 2037 - birthyear;
+//   const retirement = 65 - age;
+//   return `${firstName} retires in ${retirement} years.`;
+// };
 
-console.log(yearsUntilRetirement(1985, "Gord"));
-console.log(yearsUntilRetirement(1980, "Dave"));
+// console.log(yearsUntilRetirement(1985, "Gord"));
+// console.log(yearsUntilRetirement(1980, "Dave"));
+
+// Functions Calling Other Functions
+// keeps code DRY and makes functions more reusable
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
