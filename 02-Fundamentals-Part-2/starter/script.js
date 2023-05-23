@@ -173,31 +173,44 @@
 
 // Basic Array Methods
 
-const friends = ["Mark", "William", "Dave"];
-console.log(friends);
+// const friends = ["Mark", "William", "Dave"];
+// console.log(friends);
 
 // Add Elements
-const newLength = friends.push("Eric"); // adds to end
-console.log(friends);
-console.log(newLength);
+// const newLength = friends.push("Eric"); // adds to end
+// console.log(friends);
+// console.log(newLength);
 
-friends.unshift("John"); // adds to beginning
-console.log(friends);
+// friends.unshift("John"); // adds to beginning
+// console.log(friends);
 
 // Remove Elements
-friends.pop(); // last element
-const popped = friends.pop();
-console.log(friends);
-console.log(popped);
+// friends.pop(); // last element
+// const popped = friends.pop();
+// console.log(friends);
+// console.log(popped);
 
-friends.shift(); // first element
-console.log(friends);
+// friends.shift(); // first element
+// console.log(friends);
 
-console.log(friends.indexOf("William")); // shows index of element
+// console.log(friends.indexOf("William")); // shows index of element
 
-console.log(friends.includes("Mark")); // true or false if element is in array
-console.log(friends.includes("Bob"));
+// console.log(friends.includes("Mark")); // true or false if element is in array
+// console.log(friends.includes("Bob"));
 
-if (friends.includes("Mark")) {
-  console.log("You have a friend named Mark");
-}
+// if (friends.includes("Mark")) {
+//   console.log("You have a friend named Mark");
+// }
+
+// Introduction to Objects
+
+const gord = {
+  firstName: "Gord",
+  lastName: "Letkeman",
+  age: 2037 - 1985,
+  job: "developer",
+  friends: ["Mike", "Shane", "Chris"],
+};
+
+console.log(gord.firstName);
+console.log(gord.friends);
