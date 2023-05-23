@@ -149,24 +149,55 @@
 
 // console.log(gord);
 
-const calcAge = function (birthYear) {
-  return 2037 - birthYear;
-};
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear;
+// };
 
-const years = [1990, 1967, 2002, 2016];
+// const years = [1990, 1967, 2002, 2016];
 
 // This works but it is sloppy
 
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length - 1]);
 
-console.log(age1, age2, age3);
+// console.log(age1, age2, age3);
 
-const ages = [
-  calcAge(years[0]),
-  calcAge(years[1]),
-  calcAge(years[years.length - 1]),
-];
+// const ages = [
+//   calcAge(years[0]),
+//   calcAge(years[1]),
+//   calcAge(years[years.length - 1]),
+// ];
 
-console.log(ages);
+// console.log(ages);
+
+// Basic Array Methods
+
+const friends = ["Mark", "William", "Dave"];
+console.log(friends);
+
+// Add Elements
+const newLength = friends.push("Eric"); // adds to end
+console.log(friends);
+console.log(newLength);
+
+friends.unshift("John"); // adds to beginning
+console.log(friends);
+
+// Remove Elements
+friends.pop(); // last element
+const popped = friends.pop();
+console.log(friends);
+console.log(popped);
+
+friends.shift(); // first element
+console.log(friends);
+
+console.log(friends.indexOf("William")); // shows index of element
+
+console.log(friends.includes("Mark")); // true or false if element is in array
+console.log(friends.includes("Bob"));
+
+if (friends.includes("Mark")) {
+  console.log("You have a friend named Mark");
+}
