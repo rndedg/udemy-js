@@ -294,6 +294,57 @@
 
 // for loop keeps running while the condition (rep >= 10) is TRUE
 
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Lifting weights repitition ${rep}`);
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repitition ${rep}`);
+// }
+
+// Looping Arrays, Breaking, and Continuing
+
+const gord = [
+  "Gord",
+  "Letkeman",
+  2037 - 1985,
+  "developer",
+  ["Mike", "Shane", "Chris"],
+  true,
+];
+
+const types = [];
+
+for (let i = 0; i < gord.length; i++) {
+  // Reading from gord array
+  console.log(gord[i]);
+
+  // Filling types array
+  // types[i] = typeof gord[i];
+
+  // Added new element to the end of types array
+  types.push(typeof gord[i]);
+}
+
+console.log(types);
+
+const years = [1985, 1987, 2016, 2018];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// Continue and Break
+// continue: exit current iteration of the loop and go to the next one
+// break: exit the entire loop
+
+console.log("----- Only strings -----");
+for (let i = 0; i < gord.length; i++) {
+  if (typeof gord[i] !== "string") continue;
+  console.log(gord[i], typeof gord[i]);
+}
+
+console.log("----- Break With number -----");
+for (let i = 0; i < gord.length; i++) {
+  if (typeof gord[i] === "number") break;
+  console.log(gord[i], typeof gord[i]);
 }
