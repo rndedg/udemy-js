@@ -214,13 +214,13 @@
 
 // Dot vs. Bracket notation
 
-const gord = {
-  firstName: "Gord",
-  lastName: "Letkeman",
-  age: 2037 - 1985,
-  job: "developer",
-  friends: ["Mike", "Shane", "Chris"],
-};
+// const gord = {
+//   firstName: "Gord",
+//   lastName: "Letkeman",
+//   age: 2037 - 1985,
+//   job: "developer",
+//   friends: ["Mike", "Shane", "Chris"],
+// };
 
 // console.log(gord.lastName);
 
@@ -232,25 +232,60 @@ const gord = {
 // console.log(gord["last" + nameKey]);
 
 // using user input to look up an object value
-const interestedIn = prompt(
-  "What is do you want to know about Gord? Choose between firstName, lastName, age, job, and friends"
-);
+// const interestedIn = prompt(
+//   "What is do you want to know about Gord? Choose between firstName, lastName, age, job, and friends"
+// );
 
-if (gord[interestedIn]) {
-  console.log(gord[interestedIn]);
-} else {
-  console.log(
-    "Wrong request! What is do you want to know about Gord? Choose between firstName, lastName, age, job, and friends"
-  );
-}
+// if (gord[interestedIn]) {
+//   console.log(gord[interestedIn]);
+// } else {
+//   console.log(
+//     "Wrong request! What is do you want to know about Gord? Choose between firstName, lastName, age, job, and friends"
+//   );
+// }
 
-gord.location = "Canada";
-gord["hobby"] = "guitar";
-console.log(gord);
+// gord.location = "Canada";
+// gord["hobby"] = "guitar";
+// console.log(gord);
 
 // Challenge
 // "Gord has 3 friends and his best friend is named Mike"
 
-console.log(
-  `${gord.firstName} has ${gord.friends.length}, and his best friend is named ${gord.friends[0]}.`
-);
+// console.log(
+//   `${gord.firstName} has ${gord.friends.length}, and his best friend is named ${gord.friends[0]}.`
+// );
+
+// Object Methods
+
+// functions in objects
+const gord = {
+  firstName: "Gord",
+  lastName: "Letkeman",
+  birthYear: 1985,
+  job: "developer",
+  friends: ["Mike", "Shane", "Chris"],
+  canPlayGuitar: true,
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+  // calcAge: function () {
+  //   return 2037 - this.birthYear;
+  // },
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return 2037 - this.birthYear;
+  },
+  getSummary: function () {
+    return `${gord.firstName} is a ${gord.age}-year old ${gord.job}, and he ${
+      gord.canPlayGuitar ? "can" : "can't"
+    } play guitar.`;
+  },
+};
+
+console.log(gord.calcAge(this.birthYear));
+console.log(gord.age);
+
+// Challenge
+// "Gord is a 52 year old developer, and he can/can't play guitar."
+
+console.log(gord.getSummary());
