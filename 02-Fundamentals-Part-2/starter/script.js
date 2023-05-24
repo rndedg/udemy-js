@@ -300,6 +300,55 @@
 
 // Looping Arrays, Breaking, and Continuing
 
+// const gord = [
+//   "Gord",
+//   "Letkeman",
+//   2037 - 1985,
+//   "developer",
+//   ["Mike", "Shane", "Chris"],
+//   true,
+// ];
+
+// const types = [];
+
+// for (let i = 0; i < gord.length; i++) {
+// Reading from gord array
+// console.log(gord[i]);
+
+// Filling types array
+// types[i] = typeof gord[i];
+
+// Added new element to the end of types array
+//   types.push(typeof gord[i]);
+// }
+
+// console.log(types);
+
+// const years = [1985, 1987, 2016, 2018];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2037 - years[i]);
+// }
+
+// console.log(ages);
+
+// Continue and Break
+// continue: exit current iteration of the loop and go to the next one
+// break: exit the entire loop
+
+// console.log("----- Only strings -----");
+// for (let i = 0; i < gord.length; i++) {
+//   if (typeof gord[i] !== "string") continue;
+//   console.log(gord[i], typeof gord[i]);
+// }
+
+// console.log("----- Break With number -----");
+// for (let i = 0; i < gord.length; i++) {
+//   if (typeof gord[i] === "number") break;
+//   console.log(gord[i], typeof gord[i]);
+// }
+
 const gord = [
   "Gord",
   "Letkeman",
@@ -309,42 +358,18 @@ const gord = [
   true,
 ];
 
-const types = [];
+// Reverse loop
 
-for (let i = 0; i < gord.length; i++) {
-  // Reading from gord array
-  console.log(gord[i]);
+// for (let i = gord.length - 1; i >= 0; i--) {
+//   console.log(i, gord[i]);
+// }
 
-  // Filling types array
-  // types[i] = typeof gord[i];
+// Nested loop
 
-  // Added new element to the end of types array
-  types.push(typeof gord[i]);
-}
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`---- Starting exercise${exercise} ----`);
 
-console.log(types);
-
-const years = [1985, 1987, 2016, 2018];
-const ages = [];
-
-for (let i = 0; i < years.length; i++) {
-  ages.push(2037 - years[i]);
-}
-
-console.log(ages);
-
-// Continue and Break
-// continue: exit current iteration of the loop and go to the next one
-// break: exit the entire loop
-
-console.log("----- Only strings -----");
-for (let i = 0; i < gord.length; i++) {
-  if (typeof gord[i] !== "string") continue;
-  console.log(gord[i], typeof gord[i]);
-}
-
-console.log("----- Break With number -----");
-for (let i = 0; i < gord.length; i++) {
-  if (typeof gord[i] === "number") break;
-  console.log(gord[i], typeof gord[i]);
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weight repitition ${rep}`);
+  }
 }
