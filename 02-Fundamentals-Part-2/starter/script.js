@@ -258,34 +258,42 @@
 // Object Methods
 
 // functions in objects
-const gord = {
-  firstName: "Gord",
-  lastName: "Letkeman",
-  birthYear: 1985,
-  job: "developer",
-  friends: ["Mike", "Shane", "Chris"],
-  canPlayGuitar: true,
-  // calcAge: function (birthYear) {
-  //   return 2037 - birthYear;
-  // },
-  // calcAge: function () {
-  //   return 2037 - this.birthYear;
-  // },
-  calcAge: function () {
-    this.age = 2037 - this.birthYear;
-    return 2037 - this.birthYear;
-  },
-  getSummary: function () {
-    return `${gord.firstName} is a ${gord.age}-year old ${gord.job}, and he ${
-      gord.canPlayGuitar ? "can" : "can't"
-    } play guitar.`;
-  },
-};
+// const gord = {
+//   firstName: "Gord",
+//   lastName: "Letkeman",
+//   birthYear: 1985,
+//   job: "developer",
+//   friends: ["Mike", "Shane", "Chris"],
+//   canPlayGuitar: true,
+// calcAge: function (birthYear) {
+//   return 2037 - birthYear;
+// },
+// calcAge: function () {
+//   return 2037 - this.birthYear;
+// },
+//   calcAge: function () {
+//     this.age = 2037 - this.birthYear;
+//     return 2037 - this.birthYear;
+//   },
+//   getSummary: function () {
+//     return `${gord.firstName} is a ${gord.age}-year old ${gord.job}, and he ${
+//       gord.canPlayGuitar ? "can" : "can't"
+//     } play guitar.`;
+//   },
+// };
 
-console.log(gord.calcAge(this.birthYear));
-console.log(gord.age);
+// console.log(gord.calcAge(this.birthYear));
+// console.log(gord.age);
 
 // Challenge
 // "Gord is a 52 year old developer, and he can/can't play guitar."
 
-console.log(gord.getSummary());
+// console.log(gord.getSummary());
+
+// Iteration: The For Loop
+
+// for loop keeps running while the condition (rep >= 10) is TRUE
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repitition ${rep}`);
+}
