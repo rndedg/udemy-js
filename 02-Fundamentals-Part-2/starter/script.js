@@ -204,6 +204,16 @@
 
 // Introduction to Objects
 
+// const gord = {
+//   firstName: "Gord",
+//   lastName: "Letkeman",
+//   age: 2037 - 1985,
+//   job: "developer",
+//   friends: ["Mike", "Shane", "Chris"],
+// };
+
+// Dot vs. Bracket notation
+
 const gord = {
   firstName: "Gord",
   lastName: "Letkeman",
@@ -212,5 +222,35 @@ const gord = {
   friends: ["Mike", "Shane", "Chris"],
 };
 
-console.log(gord.firstName);
-console.log(gord.friends);
+// console.log(gord.lastName);
+
+// console.log(gord["lastName"]);
+
+// bracket notation can be a computed element
+// const nameKey = "Name";
+// console.log(gord["first" + nameKey]);
+// console.log(gord["last" + nameKey]);
+
+// using user input to look up an object value
+const interestedIn = prompt(
+  "What is do you want to know about Gord? Choose between firstName, lastName, age, job, and friends"
+);
+
+if (gord[interestedIn]) {
+  console.log(gord[interestedIn]);
+} else {
+  console.log(
+    "Wrong request! What is do you want to know about Gord? Choose between firstName, lastName, age, job, and friends"
+  );
+}
+
+gord.location = "Canada";
+gord["hobby"] = "guitar";
+console.log(gord);
+
+// Challenge
+// "Gord has 3 friends and his best friend is named Mike"
+
+console.log(
+  `${gord.firstName} has ${gord.friends.length}, and his best friend is named ${gord.friends[0]}.`
+);
