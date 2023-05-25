@@ -1,11 +1,29 @@
+/* "Global reset" */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(255, 247, 201);
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
+  padding: 50px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 .first {
@@ -15,4 +33,23 @@ h1 {
 #your-name {
   background-color: rgb(247, 247, 120);
   border: 5px solid #444;
+  width: 400px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#logo-image {
+  width: 300px;
+}
+
+/* Child selector */
+
+#your-name h2 {
+  color: rgb(61, 23, 133);
 }
