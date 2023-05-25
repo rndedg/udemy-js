@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(255, 247, 201);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.first {
+  color: rgb(49, 124, 26);
+}
+
+#your-name {
+  background-color: rgb(247, 247, 120);
+  border: 5px solid #444;
+}
